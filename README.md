@@ -1,7 +1,7 @@
 # Getting Started 
 
--- `npm install`
--- `npm start`
+- `npm install`
+- `npm start`
 
 # Instructions
 
