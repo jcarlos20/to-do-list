@@ -1,16 +1,13 @@
 import './App.css';
 import ToDoList from './Components/ToDoList';
+import { ProvideTodos } from './Context/TodoContext';
 
 function App() {
+  // INITIAL_TODOS moved to TodoContext.jsx 
   return (
-    <ToDoList
-      todos={[
-        { id: 1, text: "buy milk", status: "to-do" },
-        { id: 2, text: "wash bike", status: "in-progress" },
-        { id: 3, text: "do the budget", status: "done" },
-        { id: 4, text: "call jane", status: "to-do" },
-      ]}
-    />
+    <ProvideTodos>
+      <ToDoList />
+    </ProvideTodos>
   );
 }
 
